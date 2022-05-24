@@ -3,16 +3,14 @@ import random
 import time
 
 #welcoming the user
-name = input("What is your name? ")
+name = input("What is your name: ")
 
-print(f"Hello {name.lower} time to play hangman!")
-
-print ("")
+print (f"\nHello {name.lower()} time to play hangman!")
 
 #wait for 1 second
 time.sleep(1)
 
-print ("Start guessing...")
+print ("\nStart guessing...")
 time.sleep(0.5)
 
 #here we set the word
@@ -62,7 +60,7 @@ while turns > 0:
     print
 
     # ask the user go guess a character
-    guess = input("guess a character:") 
+    guess = input("\nGuess a character: ") 
 
     # set the players guess to guesses
     guesses += guess                    
@@ -74,13 +72,10 @@ while turns > 0:
         turns -= 1        
  
     # print wrong
-        print ("Wrong")  
- 
-    # how many turns are left
-        print ("You have", + turns, 'more guesses' )
+        print (f"\nWrong - You have {turns} more guesses")  
  
     # if the turns are equal to zero
         if turns == 0:           
     
         # print "You Lose"
-            print ("You Lose")
+            print (f"You Lose")
